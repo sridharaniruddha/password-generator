@@ -135,7 +135,12 @@ var specialCharacters = [
   // Write password to the #password input
   function writePassword() {
     var Length = Number(prompt("How many letters would you like your password to contain? Enter a number between 8-128."))
-    var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
+    var lowerCasedCharacters = confrim("Press Ok to include Lower case characters")
+    var upperCasedCharacters = confrim("Press Ok to include Upper case characters")
+    var specialCharacters = confrim("Press Ok to include Special characters")
+    var includeNumbers = confrim("Press Ok to include Numbers")
+
+    // var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
     var password = generatePassword();
     document.getElementById("display").value = password;
     document.getElementById('copy-btn').addEventListener('click', copyPassword);
@@ -144,12 +149,21 @@ var specialCharacters = [
     var passwordText = document.querySelector('#password');
   
     passwordText.value = password;
+
+    var includeNumbers = confirm("Do you want numeric characters?");
+
+      
   }
   
   // Add event listener to generate button
   generateBtn.addEventListener('click', writePassword);
 
 
+
+
+
+
+  
   //first prompt for password length options
   //prompt for four character types 
   // return value
