@@ -90,11 +90,10 @@ var specialCharacters = [
   
   
   //series of prompts
-  var Length = Number(prompt("How many letters would you like your password to contain? Enter a number between 8-128."))
-  var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
-  password = generatePassword();
-  document.getElementById("display").value = password;
-  document.getElementById('copy-btn').addEventListener('click', copyPassword);
+//   var Length = Number(prompt("How many letters would you like your password to contain? Enter a number between 8-128."))
+//   var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
+//   password = generatePassword();
+//   document.getElementById("display").value = password;//   document.getElementById('copy-btn').addEventListener('click', copyPassword);
   
   // Function to prompt user for password options
   function getPasswordOptions() {
@@ -122,14 +121,26 @@ var specialCharacters = [
     }
     return retVal;
   
-  }
+    function copyPassword() {
+        document.getElementById("display").select();
+        document.execCommand("Copy");
+        alert("Password copied to clipboard!");
+    }
+}
+  
   
   // Get references to the #generate element
   var generateBtn = document.querySelector('#generate');
   
   // Write password to the #password input
   function writePassword() {
+    var Length = Number(prompt("How many letters would you like your password to contain? Enter a number between 8-128."))
+    var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
     var password = generatePassword();
+    document.getElementById("display").value = password;
+    document.getElementById('copy-btn').addEventListener('click', copyPassword);
+
+   
     var passwordText = document.querySelector('#password');
   
     passwordText.value = password;
@@ -137,8 +148,8 @@ var specialCharacters = [
   
   // Add event listener to generate button
   generateBtn.addEventListener('click', writePassword);
-  
-  
+
+
   //first prompt for password length options
   //prompt for four character types 
-  //
+  // return value
