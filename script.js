@@ -140,6 +140,23 @@ var specialCharacters = [
     var includeSpecial = confirm("Press Ok to include Special characters");
     var includeNumbers = confirm("Press Ok to include Numbers");
 
+
+    if(inlcudeUppercase == true) {
+      newArray.push(uppercasedCharacters)
+      }
+
+    if(includeLowercase == true) {
+      newArray.pussh(lowercasedCharacters)
+    }
+
+    if(includeSpecial == true) {
+      newArray.push(specialCharacters)
+      }
+
+      if(includeNumbers == true) {
+        newArray.push(numericCharacters)
+        }
+
     // var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
     var password = generatePassword();
     document.getElementById("display").value = password;
