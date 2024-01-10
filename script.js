@@ -134,11 +134,11 @@ var specialCharacters = [
   
   // Write password to the #password input
   function writePassword() {
-    var Length = Number(prompt("How many letters would you like your password to contain? Enter a number between 8-128."))
-    var lowerCasedCharacters = confrim("Press Ok to include Lower case characters")
-    var upperCasedCharacters = confrim("Press Ok to include Upper case characters")
-    var specialCharacters = confrim("Press Ok to include Special characters")
-    var includeNumbers = confrim("Press Ok to include Numbers")
+    var Length = Number(prompt("How many letters would you like your password to contain? Enter a number between 8-128."));
+    var includeLowercase = confirm("Press Ok to include Lower case characters");
+    var inlcudeUppercase = confirm("Press Ok to include Upper case characters");
+    var includeSpecial = confirm("Press Ok to include Special characters");
+    var includeNumbers = confirm("Press Ok to include Numbers");
 
     // var charType = prompt("Enter character type: Special, Lowercase, Uppercase, Numbers")
     var password = generatePassword();
@@ -150,7 +150,7 @@ var specialCharacters = [
   
     passwordText.value = password;
 
-    var includeNumbers = confirm("Do you want numeric characters?");
+    // var includeNumbers = confirm("Do you want numeric characters?");
 
       
   }
