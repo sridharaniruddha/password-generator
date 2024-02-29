@@ -183,4 +183,8 @@ var specialCharacters = [
   
   //first prompt for password length options
   //prompt for four character types 
+<<<<<<< HEAD
   // return value
+=======
+  // return value
+>>>>>>> 26bcfcbab9e26fc7bc6e298ed6b4943d9d2a4d9e
