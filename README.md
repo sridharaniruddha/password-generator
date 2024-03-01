@@ -21,5 +21,12 @@ I will have completed the brief when the following criteria are met
 
 # Usage
 
-The deployed site can be accessed at https://sridharaniruddha.github.io/password-generator/
+The deployed site can be accessed at https://sridharaniruddha.github.io/password-generator/ .
+
 A screenshot of the site is attached below:
+
+<img width="1728" alt="Screenshot 2024-03-01 at 10 06 23" src="https://github.com/sridharaniruddha/password-generator/assets/152184230/1c550b3f-c71d-4deb-ac19-80aa62c88d49">
+
+# Credits
+
+Source code and learning materials from edX.
